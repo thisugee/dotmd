@@ -1,0 +1,126 @@
+:root {
+  --base-size: 15px;
+  --h1-size: 2.8em;
+  --h2-size: 2.2em;
+  --h3-size: 1.4em;
+  --h4-size: 1.1em;
+  --h5-size: 1em;
+
+  --spacing: 15px;
+  --nav-height: 40px;
+
+  --font-main: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  --gray-text: hsl(0, 0%, 52.3%);
+  --gray-border: hsl(0, 0%, 95.1%);
+  --gray-background: hsl(0, 0%, 97.3%);
+
+  --foreground: hsl(0, 0%, 7%);
+  --background: hsl(0, 0%, 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gray-text: hsl(0, 0%, 49.4%);
+    --gray-border: hsl(0, 0%, 31.2%);
+    --gray-background: hsl(0, 0%, 11%);
+
+    --foreground: hsl(0, 0%, 100%);
+    --background: hsl(0, 0%, 7%);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: var(--base-size);
+  font-family: var(--font-main);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-main);
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+a {
+  color: var(--gray-text);
+}
+
+p {
+  margin: 0 0 var(--spacing);
+  line-height: 1.6em;
+}
+
+img {
+  margin: 0 0 var(--spacing);
+  display: block;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);
+  background-color: var(--gray-background);
+  margin-bottom: 15px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--spacing);
+  padding: var(--spacing);
+}
+
+main .markdown,
+main .preview {
+  max-width: 50vw;
+}
+
+main .markdown {
+  display: flex;
+  justify-content: stretch;
+}
+
+main .preview {
+  word-break: break-word;
+}
+
+main .markdown textarea {
+  flex: 1 1 auto;
+  min-height: 50vh;
+  border: 2px solid var(--gray-border);
+  border-radius: 3px;
+  padding: 1rem;
+  background-color: var(--background);
+  font-family: var(--font-mono);
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
+main .markdown textarea:focus {
+  outline: none;
+}

@@ -1,0 +1,22 @@
+[package]
+name = "marktor"
+version = "0.1.0"
+edition = "2021"
+description = ""
+readme = "README.md"
+repository = "https://github.com/thisugee/marktor"
+license = "MIT OR Apache-2.0"
+keywords = ["yew", "trunk", "rust", "markdown"]
+categories = ["gui", "wasm", "web-programming"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+comrak = "0.15.0"
+gloo = "0.8.0"
+gloo-utils = "0.1.6"
+indoc = "1.0.8"
+js-sys = "0.3.60"
+tokio = "1.24.1"
+wasm-bindgen = "0.2"
+web-sys = { version="0.3.60", features=[] }
+yew = { version="0.20", features=["csr"] }
