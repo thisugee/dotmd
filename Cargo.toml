@@ -1,10 +1,10 @@
 [package]
-name = "marktor"
+name = "dotmd"
 version = "0.1.0"
 edition = "2021"
 description = ""
 readme = "README.md"
-repository = "https://github.com/thisugee/marktor"
+repository = "https://github.com/thisugee/dotmd"
 license = "MIT OR Apache-2.0"
 keywords = ["yew", "trunk", "rust", "markdown"]
 categories = ["gui", "wasm", "web-programming"]

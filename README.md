@@ -1,10 +1,10 @@
-# Marktor
+# DotMD
 
-Marktor is a simple, web-based Markdown editor built with Yew (Rust Framework)
+DotMD is a simple, web-based Markdown editor built with Rust
 
 ![image](/public/screenshot.png)
 
-[See demo](https://marktor.netlify.app)
+[See demo](https://dotmd.netlify.app)
 
 ### Installation
 
@@ -45,10 +45,11 @@ This builds the app in release mode similar to `cargo build --release`. You can 
 Unless overwritten, the output will be located in the `dist` directory.
 
 ### Todo
-- [ ]  Add theme switcher
-- [ ]  Add export feature
-- [ ]  Add support for syntax highlighting
-- [ ]  Add word counter
-
+- [ ] Add theme switcher
+- [ ] Add export to PDF
+- [ ] Add syntax highlighting
+- [ ] Add word counter
+- [ ] Add line numbers
+ 
 
 [trunk]: https://github.com/thedodd/trunk
