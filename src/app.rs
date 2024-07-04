@@ -27,7 +27,7 @@ pub fn app() -> Html {
         <div id="app">
           <nav>
             <div class="nav-left">
-              <span class="title">{"Markdown Editor"}</span>
+              <span class="title">{"DotMD"}</span>
               <label for="theme-switch" class="theme-switch-label"></label>
             </div>
 
