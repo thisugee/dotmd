@@ -4,8 +4,6 @@ DotMD is a simple, web-based Markdown editor built with Rust
 
 ![image](/public/screenshot.png)
 
-[See demo](https://dotmd.netlify.app)
-
 ### Installation
 
 Firstly, install Rust: <https://www.rust-lang.org/tools/install>. The rest of this guide assumes a typical Rust installation which contains both `rustup` and Cargo.
