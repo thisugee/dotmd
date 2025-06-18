@@ -17,6 +17,6 @@ gloo-utils = "0.1.6"
 indoc = "1.0.8"
 js-sys = "0.3.60"
 tokio = "1.24.1"
-wasm-bindgen = "0.2"
+wasm-bindgen = "0.2.88"
 web-sys = { version="0.3.60", features=[] }
 yew = { version="0.20", features=["csr"] }
