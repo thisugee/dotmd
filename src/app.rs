@@ -22,7 +22,7 @@ pub fn app() -> Html {
     };
 
     html! {
-      <body>
+      <>
         <input type="checkbox" id="theme-switch" />
         <div id="app">
           <nav>
@@ -48,6 +48,6 @@ pub fn app() -> Html {
             </div>
         </main>
         </div>
-      </body>
+      </>
     }
 }
