@@ -44,12 +44,4 @@ This builds the app in release mode similar to `cargo build --release`. You can 
 
 Unless overwritten, the output will be located in the `dist` directory.
 
-### Todo
-- [ ] Add theme switcher
-- [ ] Add export to PDF
-- [ ] Add syntax highlighting
-- [ ] Add word counter
-- [ ] Add line numbers
- 
-
 [trunk]: https://github.com/thedodd/trunk
